@@ -1,0 +1,62 @@
+Scenario 1
+Alice would like to request for servers with minimum 135 CPUs for 24 hours.
+
+Sample I/O:
+Enter number of cpu's needed
+135
+Enter the number of hours resource needed for
+24
+Enter the maximum amount you could pay for resources
+0
+Region: us-east Cost: $287.99999999999994 Total CPU's: 135
+Cpu Specifications
+{large=1, xlarge=1, 8xlarge=8, 2xlarge=1}
+Region: us-west Cost: $269.592 Total CPU's: 135
+Cpu Specifications
+{large=3, 8xlarge=8, 2xlarge=1}
+
+
+Scenario 2
+Bob would like to request as many possible CPUs for $38 for 10hours.
+
+Sample I/O:
+Enter number of cpu's needed
+0
+Enter the number of hours resource needed for
+10
+Enter the maximum amount you could pay for resources
+38
+Region: us-east Cost: $36.94 Total CPU's: 41
+Cpu Specifications
+{large=1, 8xlarge=2, 4xlarge=1}
+Region: us-west Cost: $37.06 Total CPU's: 42
+Cpu Specifications
+{large=2, 8xlarge=2, 2xlarge=2}
+
+Scenario 3
+Charlie would like to request for minimum 180 CPUs and wouldn't want to pay more than $65 for 6 hours.
+
+Sample I/O:
+Enter number of cpu's needed
+185
+Enter the number of hours resource needed for
+6
+Enter the maximum amount you could pay for resources
+65
+Could not allocate for this requirement. Minimum price for 185cpu's is $97.76399999999998
+Could not allocate for this requirement. Minimum price for 185cpu's is $91.59600000000002
+
+Enter number of cpu's needed
+185
+Enter the number of hours resource needed for
+6
+Enter the maximum amount you could pay for resources
+100
+Region: us-east Cost: $97.76399999999998 Total CPU's: 185
+Cpu Specifivations
+{large=1, 8xlarge=11, 4xlarge=1}
+Region: us-west Cost: $91.59600000000002 Total CPU's: 185
+Cpu Specifivations
+{large=1, 8xlarge=11, 2xlarge=2}
+
+
